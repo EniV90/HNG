@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.profile-contain {
+  position: relative;
+  margin-top: 50px;
+}
+
+#profile__img {
+  width: 5rem;
+  height: auto;
+  border-radius: 50%;
+  object-position: center;
+}
+
+.button_desktop {
+  position: absolute;
+  top: -1px;
+  right: 30%;
+
+}
+
+@media (max-width: 768px) {
+  .button_desktop {
+    visibility: hidden;
+
+  }
+
+}
+
+.button_mobile {
+  position: absolute;
+  top: -1px;
+  right: 30%;
+  visibility: hidden;
+}
+
+@media (max-width:768px) {
+  .button_mobile {
+    visibility: visible;
+    top: -0.5px;
+    right: 20%;
+  }
+}
+
+#slack {
+  font-size: xx-large;
+  font-weight: bolder;
+  visibility: hidden;
+}
+
+#twitter {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#camera {
+  padding-bottom: 25rem;
+  position: absolute;
+}
+
+#main a {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 24px 32px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 8px;
+  width: 60%;
+  height: 76px;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .twitter {
+    width: 343px;
+    height: 68px;
+  }
+}
+
+a {
+  color: #101828;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #101828;
+}
+
+#left {
+  margin-right: 40px;
+}
+
+@media (max-width:768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width:769px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
