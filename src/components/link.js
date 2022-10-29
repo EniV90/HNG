@@ -13,13 +13,13 @@ class Link extends Component {
             <div className="profile-contain">
               <div className="figure">
                 <img
-                  src="\assets\images\profile_1.jpg"
+                  src="assets\images\profile_1.jpg"
                   alt="profile"
                   id="profile__img"
                   className="image-main"
                 />
                 <img
-                  src="\assets\images\camera_icon.png"
+                  src="assets\images\camera_icon.png"
                   alt="camera icon"
                   id="icon"
                   className="image-hover cursor-pointer"
@@ -102,7 +102,7 @@ class Link extends Component {
           <footer>
             <div>
               <img
-                src="\assets\images\zuri_logo (1).png"
+                src="assets\images\zuri_logo (1).png"
                 alt="zuri logo"
                 id="logo"
               />
@@ -112,7 +112,7 @@ class Link extends Component {
               <p id="message">HNG Internship 9 Frontend Task</p>
             </div>
             <div>
-              <img src="\assets\images\I4G.png" alt="14G" className="logg" />
+              <img src="assets\images\I4G.png" alt="14G" className="logg" />
             </div>
           </footer>
         </section>
