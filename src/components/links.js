@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 
-class Link extends Component {
+class Links extends Component {
   constructor(props) {
     super(props);
   }
@@ -85,6 +86,9 @@ class Link extends Component {
             >
               <p>Design Books</p>
             </a>
+            <Link to="/contact" target="_blank" id="contact">
+              Contact Me
+            </Link>
           </div>
         </section>
         <section id="social_links">
@@ -98,27 +102,10 @@ class Link extends Component {
           <hr />
         </section>
         <br />
-        <section id="footer">
-          <footer>
-            <div>
-              <img
-                src="assets\images\zuri_logo (1).png"
-                alt="zuri logo"
-                id="logo"
-              />
-            </div>
-
-            <div>
-              <p id="message">HNG Internship 9 Frontend Task</p>
-            </div>
-            <div>
-              <img src="assets\images\I4G.png" alt="14G" className="logg" />
-            </div>
-          </footer>
-        </section>
+       
       </div>
     );
   }
 }
 
-export default Link;
+export default Links;

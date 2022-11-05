@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Link from './components/link';
-
+import Links from './components/links';
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+import { Router, Routes, Route } from "react-router-dom";
 
 
 class App extends Component {
@@ -13,8 +15,11 @@ class App extends Component {
   render() {
     return (
       <div>
-
-        <Link/>
+        <Routes>
+          <Route path="/" element={<Links />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+        <Footer />
       </div>
     );
   }
@@ -28,10 +33,3 @@ export default App;
 
 
 
-{/* <header className="App-header"> */}
-          // <img src={logo} className="App-logo" alt="logo" />
-          // <h1 className="App-title">Welcome to React</h1>
-        // </header>
-        // <p className="App-intro">
-          // To get started, edit <code>src/App.js</code> and save to reload.
-        // </p>
